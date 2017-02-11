@@ -1,5 +1,5 @@
 # forums
-WordPress forums for EdX courses
+WordPress forums for EdX courses.  See the private [private-teaching-systems-lab/forums](https://github.mit.edu/private-teaching-systems-lab/forums) repo for additional project and commit history.
 
 ## Initial setup and course authoring
 - [Initial setup for a new course](docs/initial-setup.md)
