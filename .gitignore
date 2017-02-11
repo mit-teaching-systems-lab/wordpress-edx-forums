@@ -1,0 +1,7 @@
+config.sh
+build
+build/**
+
+node_modules
+npm-debug.log
+tester_env.sh

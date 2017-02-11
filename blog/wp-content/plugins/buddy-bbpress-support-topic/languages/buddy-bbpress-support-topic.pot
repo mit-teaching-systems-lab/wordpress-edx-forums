@@ -1,0 +1,352 @@
+# Copyright (C) 2014 Buddy-bbPress Support Topic
+# This file is distributed under the same license as the Buddy-bbPress Support Topic package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Buddy-bbPress Support Topic 2.0-beta4\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/buddy-bbpress-support-topic\n"
+"POT-Creation-Date: 2014-11-01 16:36:05+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: buddy-bbpress-support-topic.php:196
+msgid "Not resolved"
+msgstr ""
+
+#: buddy-bbpress-support-topic.php:198
+msgid "[Support request] "
+msgstr ""
+
+#: buddy-bbpress-support-topic.php:203
+msgid "Resolved"
+msgstr ""
+
+#: buddy-bbpress-support-topic.php:205
+msgid "[Resolved] "
+msgstr ""
+
+#: buddy-bbpress-support-topic.php:210
+msgid "Not a support topic"
+msgstr ""
+
+#: includes/admin.php:108
+msgid "Version %s of Buddy-bbPress Support Topic requires version %s of bbPress to be activated. Please upgrade bbPress."
+msgstr ""
+
+#: includes/admin.php:132
+msgid "Support settings"
+msgstr ""
+
+#: includes/admin.php:164 includes/buddypress.php:216
+msgid "Who should receive an email notification when a new support topic is posted ?"
+msgstr ""
+
+#: includes/admin.php:325
+msgid "Support:"
+msgstr ""
+
+#: includes/admin.php:326 includes/admin.php:433 includes/admin.php:551
+#: includes/admin.php:817
+msgid "Support"
+msgstr ""
+
+#: includes/admin.php:643
+msgid "Support topics"
+msgstr ""
+
+#: includes/admin.php:648 includes/widgets.php:135
+msgid "Resolved so far"
+msgstr ""
+
+#: includes/admin.php:766 includes/admin.php:767
+msgid "Welcome to Buddy-bbPress Support Topic"
+msgstr ""
+
+#: includes/admin.php:807
+msgid "Buddy-bbPress Support Topic %s"
+msgstr ""
+
+#: includes/admin.php:810
+msgid "Ouch! Buddy-bbPress Support Topic %s requires at least %s, see below why it might be a great idea to upgrade bbPress ;)"
+msgstr ""
+
+#: includes/admin.php:812
+msgid "Thank you for using the latest version of Buddy-bbPress Support Topic (%s). Finally (sorry for the delay!), the plugin is improving its features to ease the management of your support requests!"
+msgstr ""
+
+#: includes/admin.php:822
+msgid "What&#39;s New"
+msgstr ""
+
+#: includes/admin.php:827
+msgid "New features for the %s (and up) powered forums !"
+msgstr ""
+
+#: includes/admin.php:835
+msgid "Control the support feature for each Forum, the way you want."
+msgstr ""
+
+#: includes/admin.php:838
+msgid "More control on Support feature"
+msgstr ""
+
+#: includes/admin.php:839
+msgid "Before, the support feature was set by default and it was not possible to control it by forum."
+msgstr ""
+
+#: includes/admin.php:840
+msgid "Now, from the forum administration, you can manage the support feature by forum, by choosing to leave default behavior, disallow the support feature or dedicate a forum to support."
+msgstr ""
+
+#: includes/admin.php:841
+msgid "This new feature made possible another one, so jump to next chapter !!"
+msgstr ""
+
+#: includes/admin.php:844
+msgid "Moderators can be notified of new support topics"
+msgstr ""
+
+#: includes/admin.php:845
+msgid "If you choosed to enable the support feature for your forum, the Keymaster can activate email notices for moderators when a new support topic is posted."
+msgstr ""
+
+#: includes/admin.php:846
+msgid "In Forum administration, you will find a checkbox list of bbPress moderators."
+msgstr ""
+
+#: includes/admin.php:847
+msgid "Simply select the ones to receive notification and you will be able ro reply faster to your support requests !"
+msgstr ""
+
+#: includes/admin.php:859
+msgid "Bulk edit support topics !"
+msgstr ""
+
+#: includes/admin.php:862
+msgid "Keymaster can change the support status of several topics at once"
+msgstr ""
+
+#: includes/admin.php:864
+msgid "From the Topics list in WordPress Administration, Keymaster can use the bulk actions to edit the support status of several topics."
+msgstr ""
+
+#: includes/admin.php:865
+msgid "After activating the topics checkboxes, choose Edit option in the bulk action, then click on the apply button."
+msgstr ""
+
+#: includes/admin.php:866
+msgid "You can use the support selectbox to update these topics support status"
+msgstr ""
+
+#: includes/admin.php:879
+msgid "Advanced users : need a new support status ?"
+msgstr ""
+
+#: includes/admin.php:882
+msgid "A filter to add custom support statuses"
+msgstr ""
+
+#: includes/admin.php:884
+msgid "Filter <code>bpbbpst_get_support_status</code> with your custom function and the new status will be fully integrated in the different features of the plugin (Dashboard stats, Stats Widget...)"
+msgstr ""
+
+#: includes/admin.php:885
+msgid "You can add as much as stati as you need! An example of function is available in this %s, use it in your plugin or in the functions.php file of your theme."
+msgstr ""
+
+#: includes/admin.php:898
+msgid "A new widget"
+msgstr ""
+
+#: includes/admin.php:901
+msgid "A widget to help users ask for support."
+msgstr ""
+
+#: includes/admin.php:903
+msgid "Administrator can use this new widget to create a button that will activate the new topic form in the support only forum"
+msgstr ""
+
+#: includes/admin.php:904
+msgid "If your WordPress is an application, it can be interesting to get the referer url the user went from before hitting the new support topic widget link"
+msgstr ""
+
+#: includes/admin.php:905
+msgid "Once posted, Keymasters and moderators will be able to see the referer above the content of the topic."
+msgstr ""
+
+#: includes/admin.php:918
+msgid "BuddyPress : a new Group manage tab"
+msgstr ""
+
+#: includes/admin.php:921
+msgid "Group Admins can customize their support settings"
+msgstr ""
+
+#: includes/admin.php:922
+msgid "If BuddyPress 2.0+ is activated, a new admin tab will show to allow group Admins to set the support behavior for their forum."
+msgstr ""
+
+#: includes/admin.php:923
+msgid "They can choose to disallow the support feature or use it just as explained in first feature description"
+msgstr ""
+
+#: includes/admin.php:924
+msgid "If they allowed support for their forum, they can subscribe to an email notification when a new support topic is posted, they can also add group mods to the subscribe list to help them"
+msgstr ""
+
+#: includes/admin.php:1043
+msgid "About"
+msgstr ""
+
+#: includes/buddypress.php:267
+msgid "There was an error saving, please try again"
+msgstr ""
+
+#: includes/buddypress.php:269
+msgid "Settings saved successfully"
+msgstr ""
+
+#: includes/buddypress.php:314
+msgid "In Group: %s"
+msgstr ""
+
+#: includes/buddypress.php:440
+msgid "Group Admin"
+msgstr ""
+
+#: includes/buddypress.php:447
+msgid "Group Mod"
+msgstr ""
+
+#: includes/buddypress.php:494
+msgid "Buddy bbPress Support Status version %s requires at least BuddyPress 2.0, please upgrade BuddyPress :) or downgrade Buddy bbPress Support Status :("
+msgstr ""
+
+#: includes/functions.php:212
+msgid "This is a support topic"
+msgstr ""
+
+#: includes/functions.php:394
+msgid "Security check failed"
+msgstr ""
+
+#: includes/functions.php:395
+msgid "loading"
+msgstr ""
+
+#: includes/functions.php:722
+msgid "All support status"
+msgstr ""
+
+#: includes/functions.php:885
+msgid "Leave users mark topics of this forum as support ones"
+msgstr ""
+
+#: includes/functions.php:889
+msgid "This forum is dedicated to support, all topics will be marked as support ones."
+msgstr ""
+
+#: includes/functions.php:893
+msgid "This forum does not accept support topics"
+msgstr ""
+
+#: includes/functions.php:1161
+msgid ""
+"%1$s wrote a new support topic: %2$s\n"
+"\n"
+"%3$s\n"
+"\n"
+"Topic Link: %4$s\n"
+"\n"
+"-----------\n"
+"\n"
+"You are receiving this email because a forum admin made you subscribe to new support topic of %5$s forum.\n"
+"\n"
+"Please ask the admin to unsubscribe from these emails."
+msgstr ""
+
+#: includes/functions.php:1257
+msgid "No support only forums were found"
+msgstr ""
+
+#: includes/functions.php:1297
+msgid "Referer"
+msgstr ""
+
+#: includes/widgets.php:37
+msgid "Displays support topic global statistics or of the active forum"
+msgstr ""
+
+#: includes/widgets.php:38 includes/widgets.php:91 includes/widgets.php:215
+msgid "Support Topics Stats"
+msgstr ""
+
+#: includes/widgets.php:168
+msgid "Go to forums"
+msgstr ""
+
+#: includes/widgets.php:225 includes/widgets.php:543
+msgid "Title:"
+msgstr ""
+
+#: includes/widgets.php:230
+msgid "Show forum link"
+msgstr ""
+
+#: includes/widgets.php:232
+msgid "When not on a forum page, display a link to it"
+msgstr ""
+
+#: includes/widgets.php:386
+msgid "Displays a short message to invite users to add a new support topic on support only forums"
+msgstr ""
+
+#: includes/widgets.php:388
+msgid "New Support Topic"
+msgstr ""
+
+#: includes/widgets.php:425 includes/widgets.php:529
+msgid "New Support topic"
+msgstr ""
+
+#: includes/widgets.php:429 includes/widgets.php:530
+msgid "Ask for Support"
+msgstr ""
+
+#: includes/widgets.php:548
+msgid "Button caption:"
+msgstr ""
+
+#: includes/widgets.php:554
+msgid "Automatically add paragraphs"
+msgstr ""
+
+#: includes/widgets.php:556
+msgid "Select the support only forum:"
+msgstr ""
+
+#: includes/widgets.php:561
+msgid "Automatically display a link to referer for moderators"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "Buddy-bbPress Support Topic"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://imathi.eu/tag/buddy-bbpress-support-topic/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Adds a support feature to your bbPress powered forums"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "imath"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://imathi.eu/"
+msgstr ""

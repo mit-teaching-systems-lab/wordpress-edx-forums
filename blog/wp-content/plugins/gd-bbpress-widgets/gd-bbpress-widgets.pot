@@ -1,0 +1,355 @@
+#: code/admin.php:29
+#: forms/tabs/toolbox.php:2
+msgid "Thank you for using this plugin. Please, take a few minutes and check out the GD bbPress Toolbox Pro plugin with many new and improved features."
+msgstr ""
+
+#: code/admin.php:30
+#: forms/tabs/toolbox.php:4
+msgid "Buy GD bbPress Toolbox Pro version or Dev4Press Plugins Pack and get 15% discount using this coupon"
+msgstr ""
+
+#: code/admin.php:32
+#: forms/tabs/toolbox.php:6
+msgid "Official Website"
+msgstr ""
+
+#: code/admin.php:33
+#: forms/tabs/toolbox.php:7
+msgid "Dev4Press Plugins Pack"
+msgstr ""
+
+#: code/admin.php:34
+msgid "Don't display this message anymore"
+msgstr ""
+
+#: code/admin.php:62
+msgid "Widgets"
+msgstr ""
+
+#: code/admin.php:77
+#: forms/panels.php:9
+msgid "Settings"
+msgstr ""
+
+#: code/admin.php:86
+#: forms/panels.php:10
+msgid "FAQ"
+msgstr ""
+
+#: code/admin.php:87
+msgid "Upgrade to GD bbPress Toolbox Pro"
+msgstr ""
+
+#: code/admin.php:98
+msgid "Website"
+msgstr ""
+
+#: code/admin.php:99
+msgid "On Twitter"
+msgstr ""
+
+#: code/admin.php:100
+msgid "On Facebook"
+msgstr ""
+
+#: code/admin.php:104
+msgid "Get Help"
+msgstr ""
+
+#: code/admin.php:105
+msgid "General Plugin Information"
+msgstr ""
+
+#: code/admin.php:106
+msgid "Home Page on Dev4Press.com"
+msgstr ""
+
+#: code/admin.php:107
+msgid "Home Page on WordPress.org"
+msgstr ""
+
+#: code/admin.php:108
+msgid "Getting Plugin Support"
+msgstr ""
+
+#: code/admin.php:109
+msgid "Support Forum on Dev4Press.com"
+msgstr ""
+
+#: code/admin.php:110
+msgid "Support Forum on WordPress.org"
+msgstr ""
+
+#: code/admin.php:111
+msgid "Plugin Support Sources"
+msgstr ""
+
+#: code/admin.php:116
+msgid "On Dev4Press website you can find many useful plugins, themes and tutorials, all for WordPress. Please, take a few minutes to browse some of these resources, you might find some of them very useful."
+msgstr ""
+
+#: code/admin.php:117
+msgid "Plugins"
+msgstr ""
+
+#: code/admin.php:117
+msgid "We have more than 10 plugins available, some of them are commercial and some are available for free."
+msgstr ""
+
+#: code/admin.php:118
+msgid "Themes"
+msgstr ""
+
+#: code/admin.php:118
+msgid "All our themes are based on our own xScape Theme Framework, and only available as premium."
+msgstr ""
+
+#: code/admin.php:119
+msgid "Tutorials"
+msgstr ""
+
+#: code/admin.php:119
+msgid "Premium and free tutorials for our plugins themes, and many general and practical WordPress tutorials."
+msgstr ""
+
+#: code/admin.php:120
+msgid "Central Documentation"
+msgstr ""
+
+#: code/admin.php:120
+msgid "Growing collection of functions, classes, hooks, constants with examples for our plugins and themes."
+msgstr ""
+
+#: code/admin.php:121
+msgid "Support Forums"
+msgstr ""
+
+#: code/admin.php:121
+msgid "Premium support forum for all with valid licenses to get help. Also, report bugs and leave suggestions."
+msgstr ""
+
+#: forms/tabs/about.php:10
+msgid "Release Date: "
+msgstr ""
+
+#: forms/tabs/about.php:12
+msgid "Status: "
+msgstr ""
+
+#: forms/tabs/about.php:14
+msgid "Build: "
+msgstr ""
+
+#: forms/tabs/about.php:19
+msgid "System Requirements"
+msgstr ""
+
+#: forms/tabs/about.php:22
+msgid "WordPress: "
+msgstr ""
+
+#: forms/tabs/about.php:24
+msgid "bbPress: "
+msgstr ""
+
+#: forms/tabs/about.php:30
+msgid "Important Plugin Links"
+msgstr ""
+
+#: forms/tabs/about.php:31
+msgid "Home Page"
+msgstr ""
+
+#: forms/tabs/about.php:32
+#: forms/tabs/about.php:36
+msgid "on"
+msgstr ""
+
+#: forms/tabs/about.php:33
+msgid "Plugin Support"
+msgstr ""
+
+#: forms/tabs/about.php:34
+msgid "Plugin Support Forum on Dev4Press"
+msgstr ""
+
+#: forms/tabs/about.php:35
+msgid "Dev4Press Important Links"
+msgstr ""
+
+#: forms/tabs/about.php:37
+#: forms/tabs/about.php:38
+msgid "Page"
+msgstr ""
+
+#: forms/tabs/d4p.php:3
+#: forms/tabs/d4p.php:8
+msgid "Plugin Home Website"
+msgstr ""
+
+#: forms/tabs/d4p.php:4
+#: forms/tabs/d4p.php:9
+#: forms/tabs/d4p.php:13
+msgid "Home on Dev4Press"
+msgstr ""
+
+#: forms/tabs/d4p.php:17
+msgid "Other Premium Plugins"
+msgstr ""
+
+#: forms/tabs/d4p.php:20
+msgid "Premium Themes"
+msgstr ""
+
+#: forms/tabs/d4p.php:23
+msgid "Free Plugins"
+msgstr ""
+
+#: forms/tabs/toolbox.php:1
+msgid "Special upgrade discount"
+msgstr ""
+
+#: forms/tabs/toolbox.php:3
+msgid "GD bbPress Toolbox Pro merges into one all our bbPress plugins: Attachments, Tools and Widgets. And, it expands these plugins with many more new features. Pro plugin is available through several different licenses."
+msgstr ""
+
+#: forms/tabs/toolbox.php:5
+msgid "Important links"
+msgstr ""
+
+#: forms/tabs/toolbox.php:11
+msgid "Contains all features from"
+msgstr ""
+
+#: forms/tabs/toolbox.php:17
+msgid "Additional features"
+msgstr ""
+
+#: forms/tabs/toolbox.php:19
+msgid "Panel with list of attachments"
+msgstr ""
+
+#: forms/tabs/toolbox.php:20
+msgid "Panel with logged errors"
+msgstr ""
+
+#: forms/tabs/toolbox.php:21
+msgid "More widgets"
+msgstr ""
+
+#: forms/tabs/toolbox.php:22
+msgid "More registered views"
+msgstr ""
+
+#: forms/tabs/widgets.php:2
+msgid "Settings saved."
+msgstr ""
+
+#: forms/tabs/widgets.php:9
+msgid "JavaScript and CSS Settings"
+msgstr ""
+
+#: forms/tabs/widgets.php:10
+msgid "You can disable including styles and JavaScript by the plugin, if you want to do it some other way."
+msgstr ""
+
+#: forms/tabs/widgets.php:14
+msgid "Include JavaScript"
+msgstr ""
+
+#: forms/tabs/widgets.php:20
+msgid "Include CSS"
+msgstr ""
+
+#: forms/tabs/widgets.php:27
+msgid "If you use shortcodes to embed forums, and you rely on plugin to add JS and CSS, you also need to enable this option to skip checking for bbPress specific pages."
+msgstr ""
+
+#: forms/tabs/widgets.php:31
+msgid "Always Include"
+msgstr ""
+
+#: forms/tabs/widgets.php:40
+msgid "Disable Default bbPress Widgets"
+msgstr ""
+
+#: forms/tabs/widgets.php:41
+msgid "You can disable default widgets that can be replaced with widgets in this plugin."
+msgstr ""
+
+#: forms/tabs/widgets.php:45
+msgid "Topic Views List"
+msgstr ""
+
+#: forms/tabs/widgets.php:54
+msgid "Save Changes"
+msgstr ""
+
+#: forms/widgets/searchform.php:2
+msgid "Search for:"
+msgstr ""
+
+#: forms/widgets/searchform.php:4
+msgid "Search"
+msgstr ""
+
+#: forms/widgets/searchtopics.php:1
+msgid "For this widget to work, you need to install GD bbPress Tools plugin and activate Search Results custom view"
+msgstr ""
+
+#: forms/widgets/title.php:0
+msgid "Title"
+msgstr ""
+
+#: forms/widgets/title.php:3
+msgid "Display to"
+msgstr ""
+
+#: forms/widgets/title.php:4
+msgid "Everyone"
+msgstr ""
+
+#: forms/widgets/title.php:4
+msgid "Only Users"
+msgstr ""
+
+#: forms/widgets/title.php:4
+msgid "Only Visitors"
+msgstr ""
+
+#: forms/widgets/topicsviews.php:1
+msgid "Select Views to Show"
+msgstr ""
+
+#: forms/panels.php:11
+msgid "Toolbox"
+msgstr ""
+
+#: forms/panels.php:12
+msgid "Dev4Press"
+msgstr ""
+
+#: forms/panels.php:13
+msgid "About"
+msgstr ""
+
+#: widgets/searchtopics.php:17
+msgid "Search form for topic search."
+msgstr ""
+
+#: widgets/searchtopics.php:18
+msgid "Search Topics"
+msgstr ""
+
+#: widgets/topicsviews.php:18
+msgid "List of the selected topic views."
+msgstr ""
+
+#: widgets/topicsviews.php:19
+msgid "Topics Views"
+msgstr ""
+
+#: widgets/topicsviews.php:56
+msgid "Topic View: %s"
+msgstr ""
+

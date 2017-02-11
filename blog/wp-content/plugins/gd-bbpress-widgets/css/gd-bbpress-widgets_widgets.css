@@ -1,0 +1,13 @@
+.d4pbbp-widget label { font-weight: bold; line-height: 24px; height: 24px; display: block; }
+.d4pbbp-widget label.list { font-weight: normal; display: inline; margin-left: 5px; }
+.d4pbbp-widget h4 { margin: 5px 0 2px; text-decoration: underline; padding: 3px 0 0; border-top: 1px solid; font-size: 1.1em; }
+.d4pbbp-widget select { width: 100%; height: 2.4em; padding: 4px; }
+.d4pbbp-widget input[type=text] { width: 100%; height: 2.4em; padding: 4px; }
+.d4pbbp-widget .widefat { background-color: #FFFFFF; }
+.d4pbbp-widget em { display: block; padding-left: 15px; font-size: 11px;}
+.d4pbbp-widget table { width: 100%; }
+.d4pbbp-widget table td { vertical-align: top; }
+.d4pbbp-widget table td.xscape-left { width: 49%; }
+.d4pbbp-widget table splitter { width: 2%; }
+.d4pbbp-widget table td.xscape-right { width: 49%; }
+.d4pbbp-widget .notice { background-color: #FFEBE8; border: 1px solid #CC0000; padding: 0.6em; border-radius: 3px; margin: 0 3px; }

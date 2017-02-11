@@ -1,0 +1,556 @@
+
+/*
+ Theme Name:   WP Knowledge Base Child
+ Theme URI:    http://ipanelthemes.com/kb/wp-knowledge-base-theme/
+ Description:  WP Knowledge Base Child Theme
+ Author:       swashata
+ Author URI:   http://www.swashata.com/
+ Template:     wp-knowledge-base
+ Version:      1.0.0
+*/
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+
+#groups-list li.even {
+background-color: rgb(217, 237, 247);
+}
+
+#groups-list li.odd {
+background-color: #FFFFFF;
+}
+
+#groups-list div.item-title {
+font-size: 125% !important;  
+}
+
+#groups-list div.item-meta {
+font-size: 110% !important;  
+}
+
+#groups-list div.item-desc {
+font-size: 110% !important;  
+}
+
+#groups-list a.group-button {
+font-size: 1.0rem !important;
+}
+
+a.bp-title-button{
+font-size: 1.0rem !important;
+}
+
+#groups_search_submit, #members_search_submit {
+font-size: 1.0rem !important;
+}
+
+table.profile-fields .label {
+color: #000 !important;
+border: 0 !important;
+font-size: 100% !important;
+vertical-align: middle !important;
+display:table-cell !important;
+text-align:left !important;
+}
+
+#activity-stream .activity-header, #members-list .item{
+font-size: 110% !important;
+}
+
+#whats-new-options {
+overflow: visible !important;
+}
+
+#rtmedia-add-media-button-post-update {
+font-size: 1.0rem !important;
+}
+
+#aw-whats-new-submit{
+font-size: 1.0rem !important;
+}
+
+#whats-new-post-in {
+display:inline;
+}
+
+body {
+
+background: rgb(238,238,238); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+
+#main, #primary {
+background: #ffffff;
+}
+
+
+.group-docs-options label {
+  color: #000;
+  display: table;
+}
+
+.group-docs-options .label {
+  display: table;
+  border: 0;
+}
+
+#colophon {
+min-height: 0px;
+}
+
+.navbar, .panel-heading{
+background-color: rgb(255, 255, 255) !important;
+background-image: linear-gradient(rgb(66, 139, 202) 0px, rgb(50, 120, 179) 100%) !important;
+background-repeat: repeat-x !important;
+border-bottom-color: rgb(50, 120, 179) !important;
+border-bottom-style: solid !important;
+border-bottom-width: 1px !important;
+border-left-color: rgb(50, 120, 179) !important;
+border-left-style: solid !important;
+border-left-width: 1px !important;
+border-right-color: rgb(50, 120, 179) !important;
+border-right-style: solid !important;
+border-right-width: 1px !important;
+border-top-color: rgb(50, 120, 179) !important;
+border-top-left-radius: 4px !important;
+border-top-right-radius: 4px !important;
+border-top-style: solid !important;
+border-top-width: 1px !important;
+box-sizing: border-box !important;
+clear: both !important;
+color: rgb(255, 255, 255) !important;
+}
+
+.navbar li a {
+color: #FFFFFF !important;
+}
+
+.navbar li a:hover, .navbar li a:focus {
+color: #333 !important;
+}
+
+.navbar .current-menu-item a{
+color: #333 !important;
+background-color: #d9edf7 !important;
+background: rgb(217, 237, 247) !important;
+
+}
+
+div .reply {
+background-color: rgb(245, 245, 245) !important;
+}
+
+.bbp-replies li {
+background-color: #FFF;
+border: 1px solid #ccc;
+}
+
+#buddypress #item-nav {
+border: 2px !important;
+border-color: #EEE !important;
+border-style: groove !important;
+}
+
+#main .page-header {
+padding-top: 10px;
+}
+
+a.bp-title-button {
+vertical-align: middle;
+margin-left: 20px;
+}
+
+#buddypress input[type="submit"] {
+vertical-align: top;
+padding: 5px 10px;
+}
+
+#gtags-top-cloud {
+margin-right: 20px;
+}
+
+#buddypress div.dir-search {
+margin-top: -10px; 
+float:right;
+}
+
+#buddypress button, #buddypress a.button, #buddypress input[type=submit], #buddypress input[type=button], 
+#buddypress input[type=reset], #buddypress ul.button-nav li a, #buddypress div.generic-button a, 
+#buddypress .comment-reply-link, a.bp-title-button {
+font-size: 1.2rem !important;
+}
+
+body.my-account ul.nav a[title~="Members"] {
+background-color: initial !important;
+background: initial !important;
+box-shadow: none;
+text-shadow: none;
+color: white !important;
+}
+
+body.my-account ul.nav a[title~="Profile"] {
+color: #333 !important;
+background-color: #d9edf7 !important;
+background: rgb(217, 237, 247) !important;
+}
+
+#members-directory-form div.item-list-tabs {
+display:inline;
+}
+
+#members-order-select {
+width:244px;
+}
+
+#members-order-select label{
+margin-right:4px;
+}
+
+#members-order-by{
+display:inline-block;
+}
+
+body.home-page #breadcrumbs {
+display:none;
+}
+
+body.home-page div.alert.alert-info {
+display:none;
+}
+
+/* Remove "Create a Group" button from breadcrumb nav */
+#breadcrumbs  a.group-create {
+display: none;
+}
+
+/* Hack to change icon in dw-qa */
+.fa-bookmark:before {
+content: "\f08d";
+}
+
+.dwqa-container .dwqa-single-question .dwqa-privacy .dwqa-btn-group {
+position:relative;
+left:0px;
+}
+
+.dwqa-container .dwqa-single-question .dwqa-privacy .dwqa-btn-group button {
+width: initial;
+}
+
+.dwqa-current-status {
+float: left;
+}
+
+.dwqa-privacy {
+float:left;
+margin-left:20px;
+}
+
+.dwqa-container .dwqa-single-question .dwqa-category {
+margin-left:20px;
+}
+
+.dwqa-category {
+float:left;
+}
+
+.dwqa-container .dwqa-single-question .dwqa-author {
+clear:both;
+display:block;
+}
+
+.dwqa-single-question .dwqa-question .dwqa-content {
+font-size:200%;
+line-height:1.2;
+color:black;
+}
+
+.dwqa-single-question .dwqa-favourite {
+width:84px;
+}
+
+.dwqa-question h1 .entry-header .page-header {
+padding-top:10px;
+}
+
+.dwqa-list-question .filter-bar .dwqa-btn {
+left:20px;
+right:auto;
+}
+
+.dwqa-list-question .archive-question-footer .dwqa-btn {
+float:left;
+}
+
+.dwqa-list-question .filter .status {
+padding-right:0px;
+padding-left:150px;
+}
+
+#desc-box,
+#desc-box2 {
+margin-top:-22px;
+margin-bottom:20px;
+padding:8px;
+border:2px solid #DDDDDD;
+background-color:#F9F9F9;
+}
+
+#desc-box2 {
+margin-top:20px; !important
+}
+
+/* Taken from desc-box */
+.working-group-button{
+	margin-top:45px; !important
+}
+
+body.home-page #desc-box {
+display: none;
+}
+
+/* Hide forum stats (#topics and replies)*/
+body.forum.bbpress.single.single-forum div#bbpress-forums div.alert.alert-info {
+display: none;
+}
+
+/* Hide certain items in Buddypress profile page */
+body.bp-user #blogs-personal-li,
+body.bp-user #media-personal-li,
+body.bp-user #docs-personal-li,
+body.bp-user #delete-account-personal-li {
+display: none;
+}
+
+/* Remove Friends and Groups from Activity section of other users profiles */
+body:not(.my-account) #activity-friends-personal-li, 
+body:not(.my-account) #activity-groups-personal-li {
+display:none;
+}
+
+
+/* Switch bbpress-like-button icon styles */
+a.bbpl_button {
+opacity: 0.3;
+}
+a.bbpl_button.liked
+{
+opacity: 1.0;
+}
+
+/* Remove subscription button from forums */
+body.forum #subscription-toggle {
+display:none;
+}
+
+#bbpress-forums .bbp-forum-content, 
+#bbpress-forums .bbp-forum-info .bbp-forum-content,
+#bbpress-forums .bbp-topic-content, 
+#bbpress-forums .bbp-reply-content,
+#bbpress-forums p.bbp-topic-meta {
+font-size:12px;
+}
+
+/* Remove duplicate title and description on group forums page */
+body.groups.forum.buddypress #item-body h3,
+body.groups.forum.buddypress #desc-box,
+body.groups.forum.buddypress div.alert.alert-info {
+display: none;
+}
+
+.container>.navbar-header, .container>.navbar-collapse {
+margin-right: 10px !important;
+}
+
+/* Hide subforum links on home page */
+li.ipt_kb_subforum_list {
+display:none;
+}
+
+.page-header {
+margin-top:17px !important;
+}
+
+/* Homepage image and color additions */
+body.home-page header.entry-header.page-header {
+background-repeat: no-repeat;
+color: black;
+padding-left: 10px;
+margin-top: 17px;
+}
+
+span.glyphicon.ipt-icon-folder-open,
+span.glyphicon.ipt-icon-file4,
+li.bbp-forum-info a.bbp-forum-title {
+color: #894e4a;
+}
+ul.forum.status-category .text-primary,
+ul.forum.status-category .text-primary:hover {
+color: #000000;
+}
+ul.forum-titles {
+color: #ffffff;
+}
+#masthead nav.navbar.main-navigation {
+background-color: #84b1d5 !important;
+background-image: none !important;
+border-radius: 0px !important;
+border-top: 0px !important;
+border-right: 0px !important;
+border-left: 0px !important;
+border-bottom: 1px solid #3980bd !important;
+}
+
+a.btn-info {
+background-image: linear-gradient(to bottom, #c07191 0, #af4c74 100%);
+border-color: #af4c74;
+}
+a.btn-info:hover, a.btn-info:focus {
+background-color: #af4c74;
+background-position: 0 -15px;
+border-color: #af4c74;
+}
+
+div.bbp-forum-content.text-muted {
+color: #666;
+}
+
+.order-active {
+font-weight:bold;
+}
+
+ul.forums.bbp-replies.list-group li div.reply, 
+ul.forums.bbp-replies.list-group li div.topic {
+overflow:auto;
+}
+
+div.bbp-signature img {
+max-width:550px;
+max-height:100px !important;
+}
+
+div.bbp-reply-content div img,
+div.bbp-reply-content div iframe {
+max-width:100%;
+max-height:400px;
+}
+
+div.bbp-attachments-errors {
+color: rgb(192, 0, 0);
+}
+
+/* prevent close button from being cut off */
+a.group-subscription-close {
+min-height: 24px;
+}
+
+div.group-subscription-div {
+padding-bottom: 6px;
+}
+
+/* Mark as read/unread plugin */
+/* Code was taken from bbpress.css, bootstra.css and bootstrap_theme.css */
+/* I copied the styles of the subscription and favorite buttons */ 
+/* Additional sources: http://stackoverflow.com/questions/1065435/can-a-css-class-inherit-one-or-more-other-classes */
+.mark-as-read-toggle a
+{
+	text-decoration: none !important;
+	padding: 6px 12px;
+	color: inherit !important;
+	font-weight: normal;
+	font-size: 13px;
+}
+
+.mark-as-read-toggle{
+padding: 4px 0;
+display: inline-block;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: normal;
+line-height: 1.428571429;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+text-shadow: 0 1px 0 #fff;
+background-image: -webkit-gradient(linear,left 0,left 100%,from(#fff),to(#e0e0e0));
+background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -moz-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+background-repeat: repeat-x;
+border-color: #dbdbdb;
+border-color: #ccc;
+}
+
+.mark-as-read-toggle:hover {
+-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+background-image: none;
+outline: 0;
+border-color: #adadad;
+color: #333333;
+background-color: #ebebeb;
+}
+
+.btn-group > .mark-as-read-toggle:last-child:not(:first-child) {
+border-bottom-left-radius: 0;
+border-top-left-radius: 0;
+}
+
+.btn-group > .mark-as-read-toggle:first-child:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Unread/readi plugin forum list page */
+/* These styles were inspired by general mail clients that highlight and bold unread messages (nothing specific) */
+/* http://www.w3schools.com/cssref/pr_gen_content.asp */
+.unread_topic:before {
+content: "unread";
+}
+.read_topic:before {
+content: "read";
+}
+
+/* http://www.w3schools.com/cssref/css_selectors.asp */
+/* http://www.w3.org/TR/CSS21/selector.html */
+.bbp-topics .bbp-topic-unread {
+background-color: whitesmoke;
+border-width: 1px !important;
+border-style: solid !important;
+border-color: lightgray !important;
+border-radius: 2px;
+}
+.bbp-topics .bbp-topic-read * {
+}
+.bbp-topics .bbp-topic-unread * {
+font-weight: bolder;
+}
+.bbp-topics .bbp-topic-read span.glyphicon {
+font-weight: lighter;
+color: darkgray;
+}
+.bbp-topics .bbp-topic-unread span.glyphicon {
+font-weight: bolder;
+color: dimgray;
+}
+
+.quizdatesdebug{
+	display:none;
+}

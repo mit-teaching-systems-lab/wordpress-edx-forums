@@ -1,0 +1,14 @@
+{
+  "name": "forums",
+  "version": "0.1.0",
+  "engines": {
+    "node": "6.4.0"
+  },
+  "scripts": {
+    "tester": "source tester_env.sh && casperjs tester.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "casperjs": "^1.1.3"
+  }
+}
