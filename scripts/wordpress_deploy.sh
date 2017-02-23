@@ -22,10 +22,11 @@ echo RSYNC_OPTIONS=$RSYNC_OPTIONS
 
 echo;echo;echo
 echo ------- Deploying -------
-echo root files...
-rsync -vz --omit-dir-times --no-perms --progress \
-  $RSYNC_OPTIONS \
-  ./blog/* -e "ssh" $USER_HOST_TARGET:/var/www/html/blog
+echo SKIPPING ROOT FILES!
+# echo root files...
+# rsync -vz --omit-dir-times --no-perms --progress \
+#   $RSYNC_OPTIONS \
+#   ./blog/* -e "ssh" $USER_HOST_TARGET:/var/www/html/blog
 
 echo wp-content...
 ssh $USER_HOST_TARGET 'mkdir -p /var/www/html/blog/wp-content'
