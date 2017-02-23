@@ -283,7 +283,7 @@ Verify the error message is resolved in the admin UI.
 #### Enable the CDN
 - In Performance > General Settings
 - Scroll down to CDN
-- Check "Enable" and select Origin Push > Amazon Simple Storage Service (S3)
+- Check "Enable" and select Origin Push > Amazon Cloud Front
 - Click “Save All Settings”
 
 Navigate to Performance > CDN
