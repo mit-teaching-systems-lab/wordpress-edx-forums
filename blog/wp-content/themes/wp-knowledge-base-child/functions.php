@@ -23,15 +23,19 @@ function report_missing_image_assets() {
     //
     // Report errors on images that have already failed to load,
     // and listen for errors on images that are still loading.
-    setTimeout(function() {
-      window.jQuery("img").toArray().forEach(function(el) {
-        if (el.naturalWidth === 0 && el.naturalHeight === 0) {
-          report("Found image that failed to load: " + el.src, { src: el.src });
-        } else {
-          window.jQuery(el).on("error", reportFailedLoad);
-        }
-      });      
-    }, 10000);
+    function reportImageLoadFailures() {
+      setTimeout(function() {
+        window.jQuery("img").toArray().forEach(function(el) {
+          if (el.naturalWidth === 0 && el.naturalHeight === 0) {
+            report("Found image that failed to load: " + el.src, { src: el.src });
+          } else {
+            window.jQuery(el).on("error", reportFailedLoad);
+          }
+        });      
+      }, 10000);
+    }
+
+    // reportImageLoadFailures();
   </script>';
 }
 add_action('wp_head', 'report_missing_image_assets' );
