@@ -45,10 +45,10 @@ function bbps_check_ranking($user_id){
 			//if post count == the end value then this title no longer applies so remove it
 			//we subtract one here to allow for the between number eg between 1 - 4 we still
 			//want to dispaly the title if the post count is 4
-			if($post_count - 1 == $rank['end'])
+			if(array_key_exists($rank, 'end') && $post_count - 1 == $rank['end'])
 				$current_rank ="";
 			
-			if ($post_count == $rank['start'])
+			if (array_key_exists($rank, 'start') && $post_count == $rank['start'])
 				$current_rank = $rank['title'];	
 		}
 		
