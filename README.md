@@ -44,6 +44,7 @@ Modified plugins are:
 - [themes/wp-knowledge-base-child/](blog/wp-content/themes/wp-knowledge-base-child)
 - [mu-plugins/IMSBasicLTI.php](blog/wp-content/mu-plugins/IMSBasicLTI.php)
 - [mu-plugins/LTI_Tool_Provider/](blog/wp-content/mu-plugins/LTI_Tool_Provider/)
+- [Get Shopped Support Forums](blog/wp-content/plugins/bbPress-Support-Forums-master) ([function](https://github.com/mit-teaching-systems-lab/wordpress-edx-forums/blob/69f2d3d830fe7dadc3f7421b1e828bb4e2d71912/blog/wp-content/plugins/bbPress-Support-Forums-master/includes/bbps-user-ranking-functions.php#L34))
 
 Some plugins and themes are used but no longer maintained upstream:
 - [GD bbPress Widgets](blog/wp-content/plugins/gd-bbpress-widgets)
