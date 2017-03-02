@@ -13,35 +13,43 @@ if ( defined( 'BP_VERSION' ) ) {
 	}
 }
 
-if ( $bpges_bp_version < 1.5 ) {
-	// Pre-1.5 versions of BuddyPress
+// Admin-related code.
+if ( defined( 'WP_NETWORK_ADMIN' ) ) {
+	require_once( dirname( __FILE__ ) . '/admin.php' );
 
-	// Load the abstraction files, which define the necessary 1.5 functions
-	require_once( dirname( __FILE__ ) . '/1.5-abstraction.php' );
-
-	// Load the group extension in the legacy fashion
-	add_action( 'init', 'ass_activate_extension' );
-} else {
-	// Load the group extension in the proper fashion
-	bp_register_group_extension( 'Group_Activity_Subscription' );
+	// Updater.
+	require_once( dirname( __FILE__ ) . '/updater.php' );
+	new GES_Updater;
 }
 
-require_once( WP_PLUGIN_DIR.'/buddypress-group-email-subscription/bp-activity-subscription-functions.php' );
-require_once( WP_PLUGIN_DIR.'/buddypress-group-email-subscription/bp-activity-subscription-digest.php' );
+// Legacy forums.
+if ( function_exists( 'bp_setup_forums' ) ) {
+	require_once( dirname( __FILE__ ) . '/legacy-forums.php' );
+}
 
+// Core.
+require_once( dirname( __FILE__ ) . '/bp-activity-subscription-functions.php' );
+require_once( dirname( __FILE__ ) . '/bp-activity-subscription-digest.php' );
+
+/**
+ * Group extension for GES.
+ *
+ * @todo This should be moved into a separate file.
+ */
 class Group_Activity_Subscription extends BP_Group_Extension {
 
-	function group_activity_subscription() {
+	public function __construct() {
 		$this->name = __('Email Options', 'bp-ass');
 		$this->slug = 'notifications';
 
 		// Only enable the notifications nav item if the user is a member of the group
 		if ( bp_is_group() && groups_is_user_member( bp_loggedin_user_id() , bp_get_current_group_id() )  ) {
-			$this->enable_nav_item = true;
+			$enable_nav_item = true;
 		} else {
-			$this->enable_nav_item = false;
+			$enable_nav_item = false;
 		}
 
+		$this->enable_nav_item = apply_filters( 'bp_group_email_subscription_enable_nav_item', $enable_nav_item );
 		$this->nav_item_position  = 91;
 		$this->enable_create_step = false;
 
@@ -49,25 +57,36 @@ class Group_Activity_Subscription extends BP_Group_Extension {
 			$this->enable_edit_item = false;
 
 		// hook in the css and js
-		add_action( 'wp_print_styles',    array( &$this , 'add_settings_stylesheet' ) );
+		add_action( 'wp_enqueue_scripts', array( &$this , 'add_settings_stylesheet' ) );
 		add_action( 'wp_enqueue_scripts', array( &$this , 'ass_add_javascript' ),1 );
 	}
 
 	public function add_settings_stylesheet() {
-		if ( bp_is_groups_component() ) {
-			$style_url  = plugins_url() . '/buddypress-group-email-subscription/css/bp-activity-subscription-css.css';
-			$style_file = WP_PLUGIN_DIR . '/buddypress-group-email-subscription/css/bp-activity-subscription-css.css';
+		if ( apply_filters( 'ass_load_assets', bp_is_groups_component() ) ) {
+			$revision_date = '20160516';
 
-			if (file_exists($style_file)) {
-				wp_register_style('activity-subscription-style', $style_url);
-				wp_enqueue_style('activity-subscription-style');
-			}
+			wp_register_style(
+				'activity-subscription-style',
+				plugins_url( basename( dirname( __FILE__ ) ) ) . '/css/bp-activity-subscription-css.css',
+				array(),
+				$revision_date
+			);
+
+			wp_enqueue_style( 'activity-subscription-style' );
 		}
 	}
 
 	public function ass_add_javascript() {
-		if ( bp_is_groups_component() ) {
-			wp_register_script('bp-activity-subscription-js', plugins_url() . '/buddypress-group-email-subscription/bp-activity-subscription-js.js', array( 'jquery' ) );
+		if ( apply_filters( 'ass_load_assets', bp_is_groups_component() ) ) {
+			$revision_date = '20160928';
+
+			wp_register_script(
+				'bp-activity-subscription-js',
+				plugins_url( basename( dirname( __FILE__ ) ) ) . '/bp-activity-subscription-js.js',
+				array( 'jquery' ),
+				$revision_date
+			);
+
 			wp_enqueue_script( 'bp-activity-subscription-js' );
 
 			wp_localize_script( 'bp-activity-subscription-js', 'bp_ass', array(
@@ -79,7 +98,7 @@ class Group_Activity_Subscription extends BP_Group_Extension {
 	}
 
 	// Display the notification settings form
-	public function display() {
+	public function display( $group_id = null ) {
 		ass_group_subscribe_settings();
 	}
 
@@ -101,9 +120,50 @@ class Group_Activity_Subscription extends BP_Group_Extension {
 
 }
 
-function ass_activate_extension() {
-	$extension = new Group_Activity_Subscription;
-	add_action( "wp", array( &$extension, "_register" ), 2 );
+// Install is using BP 1.5; need abstraction for BP 1.6.
+if ( $bpges_bp_version < 1.6 ) {
+	require_once( dirname( __FILE__ ) . '/1.6-abstraction.php' );
 }
 
-?>
+// Register our group extension.
+bp_register_group_extension( 'Group_Activity_Subscription' );
+
+/**
+ * Include files only if we're on a specific page.
+ *
+ * @since 3.7.0
+ */
+function ges_late_includes() {
+	// Any group page.
+	if ( bp_is_groups_component() ) {
+		require_once( dirname( __FILE__ ) . '/screen.php' );
+
+		// Group's "Email Options" page.
+		if ( bp_is_current_action( 'notifications' ) ) {
+			require_once( dirname( __FILE__ ) . '/screen-notifications.php' );
+		}
+
+		// Group creation page or any group's admin page.
+		if ( bp_is_group_create() || bp_is_group_admin_page() ) {
+			require_once( dirname( __FILE__ ) . '/screen-admin.php' );
+		}
+
+		// bbPress.
+		if ( bp_is_group() && function_exists( 'bbpress' ) ) {
+			require_once( dirname( __FILE__ ) . '/screen-bbpress.php' );
+		}
+	}
+
+	// User's "Settings > Email" page.
+	if ( bp_is_user_settings_notifications() ) {
+		require_once( dirname( __FILE__ ) . '/screen-user-settings.php' );
+	}
+}
+if ( function_exists( 'bp_setup_canonical_stack' ) ) {
+	$load_hook = 'bp_setup_canonical_stack';
+	$priority  = 20;
+} else {
+	$load_hook = 'bp_init';
+	$priority  = 5;
+}
+add_action( $load_hook, 'ges_late_includes', $priority );
