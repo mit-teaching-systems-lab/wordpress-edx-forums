@@ -40,8 +40,9 @@ function bbps_check_ranking($user_id){
 	//$next_rank = $user_rank[0]['count_next_ranking'];
 	$post_count = $post_count + 1;
 	$rankings = get_option('_bbps_reply_count');
-	
-		foreach ( (array) $rankings as $rank){
+	$rankings_array = (is_array($rankings) ? (array)$rankings : array());
+
+		foreach ($rankings_array as $rank){
 			//if post count == the end value then this title no longer applies so remove it
 			//we subtract one here to allow for the between number eg between 1 - 4 we still
 			//want to dispaly the title if the post count is 4
