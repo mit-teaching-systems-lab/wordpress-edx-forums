@@ -2311,7 +2311,8 @@ function my_check_group_creation_schedule_change_fnc(){
 // This action calls the my_check_group_creation_schedule_change_fnc function when my_check_group_creation_schedule_change
 // fires (every minute) to check whethere the group creation algorithm needs to run
 // Taken from http://codex.wordpress.org/Function_Reference/wp_schedule_event
-add_action('my_check_group_creation_schedule_change', 'my_check_group_creation_schedule_change_fnc');
+// KR: disable "working group" feature
+// add_action('my_check_group_creation_schedule_change', 'my_check_group_creation_schedule_change_fnc');
 
 // This function sets up an even that gets called every minute to check whether the group creation algorithm needs to run
 function my_start_checking_group_creation_schedule_change(){
@@ -2554,7 +2555,7 @@ add_filter('bp_get_group_class', 'my_get_group_class', 20, 1);
 // wp-content/plugins/bbpress/includes/extend/buddypress/activity.php
 // Other wp, bbp, bp and plugin source code 
 function my_save_post_topic($post_ID, $post, $update){
-	error_log("og in my_save_post_topic");
+	// error_log("og in my_save_post_topic");
 	if(($post==null)||(empty($post))){
 		return;
 	}
