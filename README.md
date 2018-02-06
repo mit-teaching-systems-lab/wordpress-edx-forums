@@ -1,11 +1,9 @@
-# forums
-This contains setup scripts, instructions and code for using WordPress as a discussion forum in EdX courses.
+# wordpress-edx-forums
+**THIS PROJECT IS NO LONGER ACTIVELY MAINTAINED.**  You may be interested in a similar project using [Discourse](https://github.com/mit-teaching-systems-lab/discourse-edx-lti) as a discussion forum for EdX courses.
 
-It handles LTI authentication from EdX, which  allows one-click navigation from an EdX course into the discussion forum.  There's also a separate admin login that allows WordPress admin users to sign in directly.
+This repository contains setup scripts, instructions and code for using WordPress as a discussion forum in EdX courses.  It handles LTI authentication from EdX, which  allows one-click navigation from an EdX course into the discussion forum.  There's also a separate admin login that allows WordPress admin users to sign in directly.
 
-For additional information, configuration for MIT Teaching Systems Lab courses, or commit and pull request history, see the MIT-internal repo at [private-teaching-systems-lab/forums](https://github.mit.edu/private-teaching-systems-lab/forums).  If your interested in trying this out yourself, feel free to reach out at [@mit_tsl](https://twitter.com/mit_tsl).
-
-Alternately, you may be interested in a similar project using [Discourse](https://github.com/mit-teaching-systems-lab/discourse-edx-lti) as a discussion forum for EdX courses.
+For additional information, configuration for MIT Teaching Systems Lab courses, or commit and pull request history, see the MIT-internal repo at [private-teaching-systems-lab/forums](https://github.mit.edu/private-teaching-systems-lab/forums) or additional Google Drive documentation that are internal to TSL/STEP.  If you're interested in trying this out yourself, feel free to reach out at [@mit_tsl](https://twitter.com/mit_tsl).
 
 ## Initial setup and course authoring
 - [Initial setup for a new course](docs/initial-setup.md)
